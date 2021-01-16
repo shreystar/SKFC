@@ -1,0 +1,219 @@
+
+body{
+    background-color: rgb(255,255,255);
+}
+
+
+.navbar{
+    background: rgb(24, 22, 22);
+}
+.navbar .navbar-nav .nav-items a:hover{
+    font-size: 110%;
+    background-color: rgb(255,105,180);
+    color: #c29844;
+   
+}
+.jumbotron{
+    background: rgb(255,255,255);
+    margin-top: 0px;
+}
+#headerCarousel .carousel-item{
+    height: 60vh;
+    min-width: 100vw;
+}
+#headerCarousel .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+.blockquote{
+    font-size: 330%;
+    color: floralwhite;
+}
+.blockquote .blockquote-footer{
+    color: rgb(21, 248, 0);
+}
+.row-content{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#aboutme{
+    background-color:rgb(255,255,255);
+    color:rgb(197, 197, 197);
+    padding-bottom: 50px;
+    font-size: 120%;
+}
+#aboutme a{
+    color: rgb(211, 177, 177);
+}
+#aboutmeimage{
+    height: 35vh;
+    width: 35vh;
+}
+h2{
+    color: #c29844;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times,Arial;
+}
+.rounded-circle{
+    background-color:rgb(17, 17, 17);
+    border:outset 5px #c29844;
+}
+.carousel {
+    background:rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+.media{
+    background:rgb(32,32,32);
+}
+.info{
+    color: #c29844;
+}
+#mycarousel .carousel-item {
+    color: floralwhite;
+    margin-bottom: 20px;
+}
+#mycarousel .card{
+    height: 300px;
+    background-color: #181616;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    transition: 0.5s ease;
+    
+}
+#mycarousel .card:hover{
+    opacity: 1;
+    
+}
+
+#mycarousel .carousel-item img {
+    height:250px;
+    
+}
+#mycarousel .card .card-body a{
+    color: rgb(189, 150, 58);
+    top: 0px;
+}
+.carousel-indicators{
+    bottom: 0px;
+}
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: .6s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+}
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
+}
+.modal-body img{
+    height:600px;
+    width:765px;
+    border: 3px solid ;
+}
+.modal-header{
+    color: rgb(255, 255, 255);
+    background-color: #c29844;
+}
+.modal-body{
+    color: rgb(255, 255, 255);
+    background-color: #c29844;
+}
+.wrap-projects{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    border: dashed #3a3428;
+}
+.projectimage{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: #c29844;
+}
+.wrap-projects:hover .overlay{
+    opacity: 1;
+    width: 100%;
+}
+.projectButton{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 20px;
+    text-align: center;
+}
+.projectTitle{
+    left:2%;
+    top: 5%;
+    position:absolute;
+    font-size: 25px;
+}
+.footer{
+    background-color: rgb(10, 10, 10);
+    color:#c29844 ;
+    padding-top: 20px;
+}
+.btn-social-icon{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    #headerCarousel .carousel-item{
+        height: 90vh;
+        min-width: 100vw;
+    }
+    .blockquote{
+        font-size: 200%;
+        color: floralwhite;
+    }
+    #aboutme{
+        font-size: 100%;
+    }
+    #aboutmeimage{
+        height: 35vh;
+        width: 40vh;
+        border: honeydew;
+    }
+    #mycarousel .card{
+        opacity: 1;
+    }
+    #mycarousel .card-body{
+        visibility: hidden;
+    }
+    
+  }
+  @media screen and (max-width:1024px){
+    #aboutmeimage{
+        height: 20vh;
+        width: 20vh;
+        border: honeydew;
+    }
+  }
